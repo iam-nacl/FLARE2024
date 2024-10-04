@@ -115,9 +115,23 @@ Make sure to update the necessary paths in the script.
 
 Our method achieves the following performance on [MICCAI FLARE 2024 Task2: Abdominal CT Organ Segmentation on Laptop](https://www.codabench.org/competitions/2320/):
 
-|Model name|DICE|95% Hausdorff Distance|
-|---|---|---|
-|My awesome model|90.68%|32.71|
+| Target                | DSC (%) Public Validation    | NSD (%) Public Validation    | DSC (%) Online Validation   | NSD (%) Online Validation   |
+|-----------------------|------------------------------|------------------------------|-----------------------------|-----------------------------|
+| Liver                 | 97.10 ± 1.36                 | 91.91 ± 5.42                 | 96.92                       | 97.32                       |
+| Right Kidney          | 94.51 ± 13.70                | 93.84 ± 14.63                | 92.19                       | 93.84                       |
+| Spleen                | 96.39 ± 1.80                 | 95.80 ± 5.18                 | 94.06                       | 95.16                       |
+| Pancreas              | 89.99 ± 2.37                 | 90.01 ± 5.12                 | 85.95                       | 96.08                       |
+| Aorta                 | 95.30 ± 1.90                 | 98.49 ± 3.32                 | 95.54                       | 98.51                       |
+| Inferior vena cava     | 91.91 ± 2.94                 | 93.07 ± 4.61                 | 90.75                       | 92.93                       |
+| Right adrenal gland   | 82.25 ± 7.54                 | 95.93 ± 5.54                 | 83.41                       | 95.92                       |
+| Left adrenal gland    | 83.17 ± 11.19                | 95.63 ± 9.64                 | 82.36                       | 94.49                       |
+| Gallbladder           | 80.75 ± 30.51                | 83.14 ± 31.45                | 79.25                       | 80.38                       |
+| Esophagus             | 85.17 ± 5.61                 | 90.71 ± 7.61                 | 81.34                       | 92.22                       |
+| Stomach               | 93.34 ± 3.19                 | 88.62 ± 7.41                 | 92.13                       | 94.76                       |
+| Duodenum              | 86.92 ± 5.14                 | 87.55 ± 6.09                 | 80.12                       | 92.88                       |
+| Left kidney           | 93.34 ± 14.75                | 92.69 ± 16.08                | 93.61                       | 94.95                       |
+| **Average**           | **90.01 ± 7.19**             | **92.11 ± 9.39**             | **88.28**                   | **93.80**                   |
+
 
 ## Contributing
 
