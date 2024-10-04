@@ -23,18 +23,12 @@ parser = argparse.ArgumentParser()
 # )
 
 args = parser.parse_args()
-# fold=args.fold
-# gt_path = "/data/FLARE24/data/nnUNet_raw_data_base/nnUNet_raw_data/Task107_FLARELabeledCase50/labelsTs/"
-# seg_path = "/data/FLARE24/data/output/Task107/epoch300/"
-# save_path = "/data/FLARE24/data/output/Task107/epoch300/"
 
-gt_path = "/data/FLARE24/data/nnUNet_raw_data_base/nnUNet_raw_data/Task103_FLAREUnLabeledCase2000_blackbean/labelsTs/"
-seg_path = "/data/FLARE24/data/output/Task103/epoch300/"
-save_path = "/data/FLARE24/data/output/Task103/epoch300/"
+gt_path = ""
+seg_path = ""
+save_path = ""
 
-# gt_path = "/data/FLARE24/data/nnUNet_raw_data_base/nnUNet_raw_data/Task104_FLAREUnLabeledCase2050_blackbean/labelsTs/"
-# seg_path = "/data/FLARE24/data/output/Task104/epoch300/"
-# save_path = "/data/FLARE24/data/output/Task104/epoch300/"
+
 
 filenames = os.listdir(seg_path)
 filenames = [x for x in filenames if x.endswith('.nii.gz')]

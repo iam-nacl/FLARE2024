@@ -21,7 +21,7 @@ from nnunet.network_architecture.generic_UNet import Generic_UNet
 from nnunet.paths import *
 
 
-class ExperimentPlanner3D_FLARE22Big(ExperimentPlanner):
+class ExperimentPlanner3D_BigUnet(ExperimentPlanner):
     """
     Combines ExperimentPlannerPoolBasedOnSpacing and ExperimentPlannerTargetSpacingForAnisoAxis
 
@@ -29,10 +29,10 @@ class ExperimentPlanner3D_FLARE22Big(ExperimentPlanner):
     amp is A LOT faster if the number of filters is divisible by 8
     """
     def __init__(self, folder_with_cropped_data, preprocessed_output_folder):
-        super(ExperimentPlanner3D_FLARE22Big, self).__init__(folder_with_cropped_data, preprocessed_output_folder)
-        self.data_identifier = "nnUNetData_plans_FLARE22Big"
+        super(ExperimentPlanner3D_BigUnet, self).__init__(folder_with_cropped_data, preprocessed_output_folder)
+        self.data_identifier = "nnUNetData_plans_BigUnet"
         self.plans_fname = join(self.preprocessed_output_folder,
-                                "nnUNetPlansFLARE22Big_plans_3D.pkl")
+                                "nnUNetPlansBigUnet_plans_3D.pkl")
         self.unet_base_num_features = 32
 
     def get_target_spacing(self):
