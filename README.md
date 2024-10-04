@@ -4,6 +4,7 @@
 
 This repository is the official implementation of [CDL-UNet: Curriculum-Driven Lightweight 3D U-Net for Abdominal Organ Segmentation](TBA).
 
+
 ## Environments and Requirements
 
 - **Operating System**: Ubuntu 20.04.4 LTS
@@ -139,5 +140,14 @@ If you want to contribute, please follow the usual GitHub workflow (fork, pull r
 
 ## Acknowledgement
 
-We thank the contributors of public datasets used in this project.
->>>>>>> f3f4b2ccda41ed6394a28fd7a44e5a8f926f3735
+
+
+We thank the contributors of the public datasets used in this project. Additionally, we acknowledge that our code architecture is based on the work of MIC-DKFZ/nnUNet, and some files drew inspiration from Ziyan-Huang/FLARE22. 
+
+
+
+
+
+
+
+
